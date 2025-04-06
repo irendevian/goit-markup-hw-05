@@ -431,11 +431,36 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-form-text">Subscribe</p>
+          <form class="footer-form">
+            <label aria-label="footer-email" class="footer-label">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-sub-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="overlay">
+    <div class="overlay is-open">
       <div class="modal">
-        <button type="button" class="modal-close-btn">X</button>
+        <button type="button" class="modal-close-btn">
+          <svg class="footer-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-4"></use>
+          </svg>
+        </button>
+
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -483,14 +508,33 @@
               </svg>
             </div>
           </div>
-          <label class="model-label" for="user-comment">Comment</label>
-          <textarea
-            name="user-commet"
-            id="user-comment"
-            class="modal-textarea"
-            placeholder="Text input"
-          ></textarea>
-          <button type="submit">Send</button>
+          <div class="modal-field-area">
+            <label class="model-label" for="user-comment">Comment</label>
+            <textarea
+              name="user-commet"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label for="policy" class="modal-check-text"
+              ><span class="modal-check-box">
+                <svg class="modal-check-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-vector-done"></use>
+                </svg> </span
+              >I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
