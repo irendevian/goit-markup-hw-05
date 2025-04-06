@@ -507,9 +507,8 @@ img {
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:active {
+.modal-close-btn:focus {
   background-color: #404bbf;
-  fill: #fff;
   border: none;
 }
 
@@ -643,6 +642,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 
 .modal-check:checked + label span {
@@ -696,6 +696,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  padding-left: 16px;
 }
 
 .footer-sub-btn {
@@ -736,7 +737,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-close:focus,
-.footer-icon-close:active {
+.footer-icon-close:hover,
+.footer-icon-close:focus {
   fill: #ffffff;
 }
